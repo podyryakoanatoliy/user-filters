@@ -1,0 +1,26 @@
+.name {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.info {
+  color: #717171;
+}
+
+.status {
+  color: #717171;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #a0a0a0;
+  display: flex;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.deleteBtn:hover {
+  color: #ef4444;
+}
