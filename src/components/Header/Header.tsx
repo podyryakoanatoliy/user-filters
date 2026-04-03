@@ -3,9 +3,6 @@ import clsx from "clsx";
 
 import css from "./Header.module.css";
 
-interface LinkClassProps {
-  isActive: boolean;
-}
 interface navLinkProps {
   to: string;
   title: string;
@@ -17,7 +14,7 @@ const navLinks = [
 ];
 
 export default function Header() {
-  const buildLinkClass = ({ isActive }: LinkClassProps) => {
+  const buildLinkClass = ({ isActive }: { isActive: boolean }) => {
     return clsx(css.link, isActive && css.active);
   };
 
