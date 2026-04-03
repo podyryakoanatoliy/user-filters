@@ -1,0 +1,108 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background: #7d7d7d80;
+}
+
+.modal {
+  width: 720px;
+  height: 444px;
+  max-width: 1400px;
+  gap: 60px;
+  opacity: 1;
+  padding-top: 40px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  border-width: 1px;
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: #000000;
+}
+
+.grid {
+  display: flex;
+  gap: 24px 32px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 280px;
+}
+
+.field label {
+  font-size: 14px;
+  color: #5e626b;
+  text-align: start;
+}
+
+.field input {
+  width: 280px;
+  height: 48px;
+  gap: 12px;
+  opacity: 1;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  border-width: 1px;
+  background: #ffffff;
+  border: 1px solid #e3e8ee;
+  color: #5e626b;
+}
+
+.field input:focus {
+  border-color: #000;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.btnCancel {
+  color: #000000;
+  width: 100px;
+  height: 48px;
+  border: 1px solid #c4c4c4;
+  background-color: #f5f5f5;
+}
+.btnAdd {
+  color: #000000;
+  width: 150px;
+  height: 48px;
+  border: 1px solid #c4c4c4;
+  background-color: #f5f5f5;
+}
+
+.btnAdd:hover {
+  background: #70f855;
+  border-color: #ccc;
+}
+
+.btnCancel:hover {
+  background: #ec3c3c;
+  border-color: #ffcccc;
+}

@@ -1,0 +1,38 @@
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
+  border: 1px solid #000; /* Рамка як на макеті */
+  font-family: sans-serif;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.description {
+  font-size: 14px;
+  color: #000000;
+  text-align: start;
+}
+
+.filterWrapper {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.addUserBtn {
+  margin-left: auto;
+  padding: 12px 30px;
+  border: 1px solid #ccc;
+  background: rgb(238, 67, 67);
+  cursor: pointer;
+  height: 48px;
+}

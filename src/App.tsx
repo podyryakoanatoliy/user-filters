@@ -1,9 +1,7 @@
+import RoutesComponent from "@/components/RoutesComponent/RoutesComponent";
+
 function App() {
-  return (
-    <>
-      <h1>Vite + React + TypeScript</h1>
-    </>
-  );
+  return <RoutesComponent />;
 }
 
 export default App;
