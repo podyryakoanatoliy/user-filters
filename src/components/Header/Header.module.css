@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  padding: 20px 0;
+  border: 1px solid #9333ea;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  height: 48px;
+  width: 200px;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #c4c4c4;
+  transition: background-color 0.2s;
+}
+
+.active {
+  background-color: #cccccc;
+}
