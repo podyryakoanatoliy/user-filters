@@ -2,7 +2,7 @@
   max-width: 1200px;
   margin: 40px auto;
   padding: 40px;
-  border: 1px solid #000; /* Рамка як на макеті */
+  border: 1px solid #000;
   font-family: sans-serif;
 }
 
@@ -23,16 +23,10 @@
 
 .filterWrapper {
   display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
+  gap: 12px;
   align-items: center;
 }
-
-.addUserBtn {
-  margin-left: auto;
-  padding: 12px 30px;
-  border: 1px solid #ccc;
-  background: rgb(238, 67, 67);
-  cursor: pointer;
-  height: 48px;
+.controls {
+  display: flex;
+  justify-content: space-between;
 }

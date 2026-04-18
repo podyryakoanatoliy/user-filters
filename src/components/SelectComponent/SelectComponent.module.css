@@ -95,3 +95,7 @@
   text-align: start;
   cursor: pointer;
 }
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}

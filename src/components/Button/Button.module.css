@@ -1,0 +1,57 @@
+.btn {
+  padding: 8px 16px;
+  color: rgb(5, 5, 5);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.deleteBtn {
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+}
+.deleteBtn:hover {
+  background: #f5f5f5;
+  border-color: #ffcccc;
+}
+
+.btnCancel {
+  color: #000000;
+  width: 100px;
+  height: 48px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+}
+.btnAdd {
+  color: #000000;
+  width: 150px;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  cursor: pointer;
+}
+
+.btnAdd:hover {
+  background: #c4c4c4;
+  border-color: #3d3d3d;
+}
+
+.btnCancel:hover {
+  background: #c4c4c4;
+  border-color: #3d3d3d;
+}
+.filterBtn {
+  background: #ffffff;
+  width: 48;
+  height: 48;
+  gap: 10px;
+  border-width: 1px;
+  padding: 12px;
+  border: 1px solid #c4c4c4;
+  cursor: pointer;
+}
+.filterBtn:hover {
+  background: #c4c4c4;
+  border-color: #3d3d3d;
+}

@@ -1,27 +1,18 @@
-import styles from "./UserCard.module.css";
+import type { User } from "@/components/Users/Users";
 
-interface User {
-  name: string;
-  status: {
-    name: string;
-    value: string;
-  };
-  department: {
-    name: string;
-    value: string;
-  };
-  country: {
-    name: string;
-    value: string;
-  };
-}
+import Button from "@/components/Button/Button";
+import Icon from "@/components/Icon/Icon";
+
+import styles from "./UserCard.module.css";
 
 interface UserCardProps {
   user: User;
+  onDelete: (id: string | number) => void;
 }
 
 export default function UserCard({
-  user: { name, status, department, country },
+  user: { name, status, department, country, id },
+  onDelete,
 }: UserCardProps) {
   return (
     <>
@@ -29,11 +20,9 @@ export default function UserCard({
       <p className={styles.info}>{department.name}</p>
       <p className={styles.info}>{country.name}</p>
       <p className={styles.status}>{status.name}</p>
-      <button className={styles.deleteBtn}>
-        <svg width="20" height="20">
-          <use href="/icons.svg#trash-icon" />
-        </svg>
-      </button>
+      <Button styles="deleteBtn" onClick={() => onDelete(id)}>
+        <Icon href={{ name: "delete", className: "delete" }} />
+      </Button>
     </>
   );
 }
